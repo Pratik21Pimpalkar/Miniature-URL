@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,200&family=Poppins:ital,wght@0,300;0,400;0,500;1,500&family=Raleway:ital,wght@0,100;0,300;0,400;0,600;0,800;1,500&family=Satisfy&family=Ubuntu:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+body a {
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.bg {
+  z-index: -1;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bg img {
+  width: 100%;
+}
+
+.Hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Hero h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: white;
+}
+
+.Hero p {
+  margin-top: 0.71rem;
+  letter-spacing: 0.25rem;
+  color: white;
+}
+
+.Hero h2 {
+  margin-top: 0.71rem;
+  color: #ffd4d1;
+}
+
+.Hero .urlInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+}
+
+.Hero .urlInput input {
+  padding: 1rem 0.8rem;
+  outline: none;
+  width: 25rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  color: white;
+  border: #fa7268 solid 0.1rem;
+}
+
+.Hero .urlInput input::-webkit-input-placeholder {
+  color: #cccccc;
+}
+
+.Hero .urlInput input:-ms-input-placeholder {
+  color: #cccccc;
+}
+
+.Hero .urlInput input::-ms-input-placeholder {
+  color: #cccccc;
+}
+
+.Hero .urlInput input::placeholder {
+  color: #cccccc;
+}
+
+.Hero .urlInput input:active, .Hero .urlInput input:focus {
+  border: #fe3f32 solid 0.1rem;
+}
+
+.Hero .urlInput #alias {
+  width: 10rem !important;
+  margin-left: 2rem;
+}
+
+.Hero .urlInput .buttons {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.Hero .urlInput button {
+  cursor: pointer;
+  margin-left: 2rem;
+  padding: 1rem 0.5rem;
+  width: 9rem;
+  border: solid 0.2rem #fa7268;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  font-weight: 700;
+  font-family: 'Raleway', cursive;
+  font-size: larger;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 3rem;
+}
+
+.Hero .urlInput button:hover, .Hero .urlInput button:active {
+  border: solid 0.2rem #f34d41;
+  color: #C62368;
+  -webkit-transform: translateY(1rem);
+          transform: translateY(1rem);
+}
+
+.analytics {
+  position: absolute;
+  left: 0rem;
+  top: 2rem;
+  cursor: pointer;
+  margin-left: 2rem;
+  padding: 1rem 0.5rem;
+  width: 9rem;
+  border: solid 0.2rem #fa7268;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  font-weight: 700;
+  font-family: 'Raleway', cursive;
+  font-size: larger;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 3rem;
+}
+
+.analytics:hover, .analytics:active {
+  border: solid 0.2rem #f34d41;
+  color: #C62368;
+  -webkit-transform: translateY(1rem);
+          transform: translateY(1rem);
+}
+
+#analytics-logo {
+  display: block;
+  padding: 1rem 0;
+  border-bottom: 0.1rem solid #fe3f32;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.cards {
+  padding: 0 10rem;
+  color: #fff5e4;
+  display: -ms-grid;
+  display: grid;
+}
+
+.cards a {
+  text-decoration: none !important;
+}
+
+.cards .card {
+  margin: 01rem 0.5rem;
+  border: 0.07rem solid white;
+  padding: 2rem;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  background-color: transparent;
+  border-radius: 2rem;
+}
+
+.cards .card:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  border: 0.07rem solid #fa7268;
+}
+
+.cards .card .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cards .card .row h3 {
+  margin: 0.51rem 0;
+  font-size: 1.2rem;
+}
+
+.cards .card .row .longurl,
+.cards .card .row .shorturl {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #fff5e4 !important;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.cards .card .row .longurl:hover, .cards .card .row .longurl:active, .cards .card .row .longurl:focus,
+.cards .card .row .shorturl:hover,
+.cards .card .row .shorturl:active,
+.cards .card .row .shorturl:focus {
+  color: #fff477 !important;
+}
+
+.cards .card .row .clicks,
+.cards .card .row .date {
+  border: 0.05rem solid white;
+  padding: 0.7rem 0.7rem;
+  border-radius: 2rem;
+}
+/*# sourceMappingURL=style.css.map */
