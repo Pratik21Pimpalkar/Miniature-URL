@@ -86,19 +86,18 @@ def analytics(request, short_url):
         'date', 'long_url', 'short_url', 'clicks')
     obj = row[0]
 
-    os = request.META['OS']
-    processor = request.META['NUMBER_OF_PROCESSORS']
+    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+    if x_forwarded_for:
+        ip = x_forwarded_for.split(',')[0]
+    else:
+        ip = request.META.get('REMOTE_ADDR')
 
-    
     chart = ChartData.objects.all()
     context = {
         "obj": obj,
         "chart": chart,
-        'os': os,
-        'processor':processor,
-       
+        'ip': ip
+
     }
-    
-    
 
     return render(request, "analytics.html", context)
