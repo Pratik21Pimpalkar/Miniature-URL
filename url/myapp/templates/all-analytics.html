@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{%  static 'style.css' %}" />
 
-    <title>Document</title>
+    <title>Miniature URL</title>
   </head>
 
   <body style="background-color: #001220">
     <div>
-      <a href="../" >
+      <a href="../">
         <nav class="Hero" id="analytics-logo">
           <div>
             <h1>Miniature URL</h1>
@@ -20,25 +20,25 @@
           </div>
         </nav>
       </a>
-      <div class="cards">
+      <div class="cards_">
         {% for obj in rows %}
+        <a href="{% url 'analyticsPage' obj.short_url %}">
+          <div class="card_">
+            <div class="row_">
+              <h3 class="longurl">{{ obj.long_url }}</h3>
+              <h3 class="date">Date: {{ obj.date }}</h3>
+            </div>
 
-        <div class="card">
-          <div class="row">
-            <h3 class="longurl">{{ obj.long_url }}</h3>
-
-            <h3 class="date">Date: {{ obj.date }}</h3>
+            <div class="row_">
+              <a href="{{ obj.short_url }}" class="atag" target="_blank">
+                <h3 class="shorturl">{{ obj.short_url }}</h3>
+              </a>
+              <h3 class="clicks">
+                Clicks: <strong class="allClicks">{{ obj.clicks }}</strong>
+              </h3>
+            </div>
           </div>
-
-          <div class="row">
-            <a href="/analytics/{{ obj.short_url }}" target="_blank">
-              <h3 class="shorturl">{{ obj.short_url }}</h3>
-            </a>
-            <h3 class="clicks">
-              Clicks: <strong class="allClicks">{{ obj.clicks }}</strong>
-            </h3>
-          </div>
-        </div>
+        </a>
         {% endfor %}
       </div>
     </div>

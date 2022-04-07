@@ -15,7 +15,7 @@
     <title>Miniature URL</title>
   </head>
 
-  <body style="background-color:#C62368">
+  <body style="background-color: #c62368">
     <div class="bg">
       <img src="{%  static 'background-cropped.svg' %}" alt="background" />
     </div>
@@ -63,24 +63,26 @@
     </div>
 
     {% if submitted %}
-    <div class="cards">
-      <div class="card">
-        <div class="row">
-          <h3 class="longurl">{{long_url }}</h3>
+    <a href="/analytics">
+      <div class="cards_">
+        <div class="card_">
+          <div class="row_">
+            <h3 class="longurl">{{long_url }}</h3>
 
-          <h3 class="date">Date: {{date }}</h3>
-        </div>
+            <h3 class="date">Date: {{date }}</h3>
+          </div>
 
-        <div class="row">
-          <a href="{{short_url }}" target="_blank">
-            <h3 class="shorturl">{{short_url }}</h3>
-          </a>
-          <h3 class="clicks">
-            Clicks: <strong class="allClicks">{{clicks }}</strong>
-          </h3>
+          <div class="row_">
+            <a class="atag" href="{{short_url }}" target="_blank">
+              <h3 class="shorturl">{{short_url }}</h3>
+            </a>
+            <h3 class="clicks">
+              Clicks: <strong class="allClicks">{{clicks }}</strong>
+            </h3>
+          </div>
         </div>
       </div>
-    </div>
+    </a>
     {% endif %}
 
     <div class="container" id="alert-box" style="display: none">

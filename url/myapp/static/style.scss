@@ -88,7 +88,7 @@ body {
         }
 
         button {
-          
+
             cursor: pointer;
             margin-left: 2rem;
             padding: 1rem 0.5rem;
@@ -112,7 +112,8 @@ body {
         }
     }
 }
-.analytics{
+
+.analytics {
     position: absolute;
     left: 0rem;
     top: 2rem;
@@ -147,33 +148,41 @@ body {
     margin-bottom: 1rem;
 }
 
-.cards {
+.cards_ {
     padding: 0 10rem;
     color: #fff5e4;
     display: grid;
-   
+
 
     a {
         text-decoration: none !important;
     }
 
-    .card {
+    .card_ {
         margin: 01rem 0.5rem;
         border: 0.07rem solid white;
         padding: 2rem;
         transition: all 0.6s;
         background-color: transparent;
         border-radius: 2rem;
-        &:hover{
+
+        &:hover {
             transform: scale(1.01);
             border: 0.07rem solid #fa7268;
 
         }
 
-        .row {
+        .row_ {
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            .atag {
+
+
+                flex: 1;
+
+            }
 
             h3 {
                 margin: 0.51rem 0;
@@ -195,10 +204,12 @@ body {
 
             .clicks,
             .date {
+                color: white;
                 border: 0.05rem solid white;
                 padding: 0.7rem 0.7rem;
                 border-radius: 2rem;
             }
         }
     }
+
 }

@@ -177,18 +177,18 @@ body a {
   margin-bottom: 1rem;
 }
 
-.cards {
+.cards_ {
   padding: 0 10rem;
   color: #fff5e4;
   display: -ms-grid;
   display: grid;
 }
 
-.cards a {
+.cards_ a {
   text-decoration: none !important;
 }
 
-.cards .card {
+.cards_ .card_ {
   margin: 01rem 0.5rem;
   border: 0.07rem solid white;
   padding: 2rem;
@@ -198,13 +198,13 @@ body a {
   border-radius: 2rem;
 }
 
-.cards .card:hover {
+.cards_ .card_:hover {
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
   border: 0.07rem solid #fa7268;
 }
 
-.cards .card .row {
+.cards_ .card_ .row_ {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -216,13 +216,19 @@ body a {
           align-items: center;
 }
 
-.cards .card .row h3 {
+.cards_ .card_ .row_ .atag {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.cards_ .card_ .row_ h3 {
   margin: 0.51rem 0;
   font-size: 1.2rem;
 }
 
-.cards .card .row .longurl,
-.cards .card .row .shorturl {
+.cards_ .card_ .row_ .longurl,
+.cards_ .card_ .row_ .shorturl {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -231,15 +237,16 @@ body a {
   transition: all 0.7s;
 }
 
-.cards .card .row .longurl:hover, .cards .card .row .longurl:active, .cards .card .row .longurl:focus,
-.cards .card .row .shorturl:hover,
-.cards .card .row .shorturl:active,
-.cards .card .row .shorturl:focus {
+.cards_ .card_ .row_ .longurl:hover, .cards_ .card_ .row_ .longurl:active, .cards_ .card_ .row_ .longurl:focus,
+.cards_ .card_ .row_ .shorturl:hover,
+.cards_ .card_ .row_ .shorturl:active,
+.cards_ .card_ .row_ .shorturl:focus {
   color: #fff477 !important;
 }
 
-.cards .card .row .clicks,
-.cards .card .row .date {
+.cards_ .card_ .row_ .clicks,
+.cards_ .card_ .row_ .date {
+  color: white;
   border: 0.05rem solid white;
   padding: 0.7rem 0.7rem;
   border-radius: 2rem;
